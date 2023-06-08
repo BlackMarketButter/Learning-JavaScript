@@ -412,6 +412,6 @@ console.log(`You'd use this many galons a year: ${galonsPerYear}`);
 console.log(`Costco galon cost would be: ${(galonsPerYear) * costcoGalon} wihout a membership. And ${(((galonsPerYear) * costcoGalon) + costcoMembership)}`);
 console.log(`Average galon cost would be: ${(galonsPerYear) * averageGalon}`);
 
-I can change stuff YO!
+// I can change stuff YO!!!
 
 */
