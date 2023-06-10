@@ -415,3 +415,111 @@ console.log(`Average galon cost would be: ${(galonsPerYear) * averageGalon}`);
 // I can change stuff YO!!!
 
 */
+
+//FOR LOOP. pretty cool, but eh...it just counts.
+/*
+for (let rep = 1; rep <= 10; rep++) {
+    console.log(`Lifting weights repetition ${rep} 🏋️‍♀️`)
+};
+
+//WHILE LOOPS, ITS DA BOMB.
+
+let rep = 1;
+while (rep <= 10) {
+    console.log(`Lifting weights repetition ${rep} 🏋️‍♀️`)
+    rep++
+};
+*/
+
+/*
+function diceGen(sides) {
+    return Math.trunc(Math.random() * sides) + 1;
+}
+
+let cumter = 0;
+
+let dice1 = 7;
+let dice2 = 7;
+let dice3 = 7;
+let dice4 = 7;
+let dice5 = 7;
+let dice6 = 7;
+
+while (!(dice1 === 1 && dice2 === 2 && dice3 === 3 && dice4 === 4 && dice5 === 5 && dice6 === 6)) {
+    cumter++
+    if (cumter > 99999) {
+        console.log(`Try: ${cumter}`)
+        break
+    };
+
+    dice1 = diceGen(6);
+    console.log(`Dice1 is: ${dice1}`);
+    if (dice1 !== 1) {
+        continue
+    }
+
+    dice2 = diceGen(6);
+    console.log(`Dice2 is: ${dice2}`);
+    if (dice2 !== 2) {
+        continue
+    }
+
+    dice3 = diceGen(6);
+    console.log(`Dice3 is: ${dice3}`);
+    if (dice3 !== 3) {
+        continue
+    }
+
+    dice4 = diceGen(6);
+    console.log(`Dice4 is: ${dice4}`);
+    if (dice4 !== 4) {
+        continue
+    }
+
+    dice5 = diceGen(6);
+    console.log(`Dice5 is: ${dice5}`);
+    if (dice5 !== 5) {
+        continue
+    }
+
+    dice6 = diceGen(6);
+    console.log(`Dice6 is: ${dice6}`);
+    if (dice6 !== 6) {
+        continue
+    }
+
+    console.log(`Try: ${cumter}`)
+};
+
+console.log("finished")
+*/
+
+const calcTip = function (bill) {
+    return bill >= 50 && bill <= 300 ? bill * 0.15 : bill * 0.2;
+};
+
+/* Write your code below. Good luck! 🙂 */
+
+
+const bills = [22, 295, 176, 440, 37, 105, 10, 1100, 86, 52];
+const tips = [];
+const totals = [];
+
+for (let i = 0; i < bills.length; i++) {
+    const tip = calcTip(bills[i]);
+    tips.push(tip);
+    totals.push(tip + bills[i]);
+}
+console.log(totals)
+
+function calcAverage(arr) {
+    let sum = 0;
+    for (let i = 0; i < arr.length; i++) {
+        sum += arr[i];
+    }
+    return sum / arr.length
+}
+
+console.log('Average tips and totals:')
+console.log(calcAverage(tips));
+console.log(calcAverage(totals));
