@@ -111,3 +111,39 @@ const testArray2 = [87, 97, 89, 78, 97, 89, 78, 97, 89];
 
 console.log(arrMerger(testArray1, testArray2));
 */
+
+/*
+
+// 1) Understand the problem
+- Array transforned to string, separated by "..."
+- What is the X days?
+
+// 2) Breaking up into sub-problems
+- How to transform into a sring?
+- How put the degrees in the right place?
+- How to properly count and place the X days?
+- Add ... between elements and start and end of string.
+
+*/
+
+/*
+function printForecast(arr) {
+  let str = `...`;
+
+  for (let i = 0; i < arr.length; i++) {
+    let degree;
+
+    degree = arr[i];
+
+    str += ` ${degree}C in ${i + 1} days ...`;
+  }
+
+  return str;
+}
+
+const testArr1 = [17, 21, 23];
+const testArr2 = [12, 5, -5, 0, 4];
+
+console.log(printForecast(testArr1));
+console.log(printForecast(testArr2));
+*/
