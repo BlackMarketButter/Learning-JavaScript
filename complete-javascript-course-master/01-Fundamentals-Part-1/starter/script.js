@@ -494,6 +494,7 @@ while (!(dice1 === 1 && dice2 === 2 && dice3 === 3 && dice4 === 4 && dice5 === 5
 console.log("finished")
 */
 
+/*
 const calcTip = function (bill) {
     return bill >= 50 && bill <= 300 ? bill * 0.15 : bill * 0.2;
 };
@@ -523,3 +524,4 @@ function calcAverage(arr) {
 console.log('Average tips and totals:')
 console.log(calcAverage(tips));
 console.log(calcAverage(totals));
+*/
